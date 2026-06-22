@@ -54,6 +54,7 @@
         justify-content: center;
         align-items: center;
         padding: 1rem;
+        background-color: beige;
       }
 
       .card {
@@ -89,6 +90,14 @@
 
       img {
         display: inline-block;
+      }
+
+      a {
+        all: unset;
+      }
+
+      a:hover {
+        color: purple;
       }
 
       .logo {
@@ -157,6 +166,17 @@
         scale: 1.1;
         transition: 0.35s;
       }
+
+      .button {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background-color: aquamarine;
+      }
+
+      .button:hover {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: 0.5s;
+      }
     </style>
   </head>
   <body>
@@ -174,7 +194,9 @@
         <a href="https://www.github.com/jonahhess" target="_blank"
           ><img class="logo-big" src="images/github-logo.png" alt="Github Logo"
         /></a>
-        <a href="assets/Jonah Hess - CV.pdf" download>Download CV</a>
+        <a href="assets/Jonah Hess - CV.pdf" download class="button"
+          >Download CV</a
+        >
       </div>
     </nav>
     <aside>
@@ -194,8 +216,8 @@
             nesciunt. Molestias vel quia dolorem?
           </p>
           <div id="hero-action" class="flex-container">
-            <a href="mailto:jonahhessdev@gmail.com">Email me</a>
-            <a href="#projects">My Projects</a>
+            <a href="mailto:jonahhessdev@gmail.com" class="button">Email me</a>
+            <a href="#projects" class="button">My Projects</a>
           </div>
         </div>
         <img id="headshot" src="images/headshot.jpeg" alt="Headshot" />
@@ -222,7 +244,7 @@
               laboriosam reiciendis, consectetur porro maiores optio culpa
               perferendis exercitationem ad! Ex?
             </p>
-            <a href="">Click to open</a>
+            <a href="" class="button">Click to open</a>
           </div>
           <div class="card">
             <h3>Project 2</h3>
@@ -232,7 +254,7 @@
               laboriosam reiciendis, consectetur porro maiores optio culpa
               perferendis exercitationem ad! Ex?
             </p>
-            <a href="">Click to open</a>
+            <a href="" class="button">Click to open</a>
           </div>
           <div class="card">
             <h3>Project 3</h3>
@@ -242,7 +264,7 @@
               laboriosam reiciendis, consectetur porro maiores optio culpa
               perferendis exercitationem ad! Ex?
             </p>
-            <a href="">Click to open</a>
+            <a href="" class="button">Click to open</a>
           </div>
         </div>
       </section>
