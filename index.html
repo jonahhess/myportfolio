@@ -17,6 +17,8 @@
         background-color: #fefefe;
         position: sticky;
         top: 0;
+        margin: 5px;
+        z-index: 1;
       }
       main {
         grid-area: main;
@@ -43,6 +45,7 @@
           "aside main"
           "footer footer";
         overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       .box {
@@ -79,7 +82,8 @@
       }
 
       fieldset,
-      legend {
+      legend,
+      button {
         all: unset;
         display: block;
       }
@@ -94,6 +98,7 @@
 
       a:hover {
         color: purple;
+        transition: 0.35s;
       }
 
       .logo {
@@ -141,12 +146,12 @@
       .box:hover,
       img:hover {
         scale: 1.2;
-        transition: 0.35s;
+        transition: 0.3s;
       }
 
       .card:hover {
         scale: 1.1;
-        transition: 0.35s;
+        transition: 0.3s;
       }
 
       .button {
@@ -158,7 +163,21 @@
 
       .button:hover {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        transition: 0.5s;
+        transition: 0.35s;
+        scale: 1.05;
+      }
+
+      .download {
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-weight: bold;
+      }
+
+      .download:hover {
+        color: white;
+        background-color: black;
+        transition: 0.35s;
       }
     </style>
   </head>
@@ -177,7 +196,7 @@
         <a href="https://www.github.com/jonahhess" target="_blank"
           ><img class="logo-big" src="images/github-logo.png" alt="Github Logo"
         /></a>
-        <a href="assets/Jonah Hess - CV.pdf" download class="button"
+        <a href="assets/Jonah Hess - CV.pdf" download class="download"
           >Download CV</a
         >
       </div>
