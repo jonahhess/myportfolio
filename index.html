@@ -69,7 +69,8 @@
       .flex-container {
         display: flex;
         justify-content: space-evenly;
-        gap: 3em;
+        align-items: center;
+        gap: 0.5rem;
         flex-wrap: wrap;
       }
 
@@ -87,9 +88,14 @@
         display: inline-block;
       }
 
-      #logo {
-        width: 75px;
-        height: 75px;
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      .logo-big {
+        width: 38px;
+        height: 38px;
       }
 
       #headshot {
@@ -114,13 +120,17 @@
     <nav>
       <a href=""
         ><img
-          id="logo"
+          class="logo"
           src="images/jh-monogram-logo.jpeg"
           alt="A monogram made up of the letters J and H"
       /></a>
-      <div>
-        <a href="https://www.linkedin.com/in/jonah-hess">LinkedIn</a>
-        <a href="https://www.github.com/jonahhess">Github</a>
+      <div class="flex-container">
+        <a href="https://www.linkedin.com/in/jonah-hess" target="_blank"
+          ><img class="logo" src="images/linkedin-logo.png" alt="LinkedIn logo"
+        /></a>
+        <a href="https://www.github.com/jonahhess" target="_blank"
+          ><img class="logo-big" src="images/github-logo.png" alt="Github Logo"
+        /></a>
         <a href="assets/Jonah Hess - CV.pdf" download>Download CV</a>
       </div>
     </nav>
