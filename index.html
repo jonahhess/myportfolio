@@ -14,13 +14,15 @@
       nav {
         grid-area: nav;
         display: flex;
+        height: 100%;
         justify-content: space-between;
         background-color: #fefefe;
         position: sticky;
-        top: 15px;
-        margin: 5px;
+        top: 0px;
+        margin: 0;
         z-index: 1;
       }
+
       main {
         grid-area: main;
       }
@@ -48,6 +50,7 @@
           "footer footer";
         overflow-x: hidden;
         font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0px;
       }
 
       .box {
@@ -167,7 +170,8 @@
 
       fieldset,
       legend,
-      button {
+      button,
+      a {
         all: unset;
         display: block;
       }
@@ -177,7 +181,7 @@
       }
 
       a {
-        all: unset;
+        cursor: pointer;
         transition: 0.35s;
       }
 
@@ -229,7 +233,9 @@
 
       .button:hover {
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        background-color: rgb(162, 248, 219);
         scale: 1.05;
+        color: black;
       }
 
       .download {
@@ -433,16 +439,16 @@
           <fieldset>
             <legend>Contact Form</legend>
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" autocomplete="name" />
             <br />
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" autocomplete="email" />
             <br />
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" />
+            <input type="tel" id="phone" autocomplete="phone" />
             <br />
             <label for="date">Date</label>
-            <input type="date" />
+            <input type="date" id="date" />
             <br />
             <label for="city">City</label>
             <select name="city" id="city">
