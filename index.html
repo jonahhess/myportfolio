@@ -171,65 +171,89 @@
         <form class="flex-container">
           <fieldset>
             <legend>Contact Form</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" autocomplete="name" />
-            <br />
-            <label for="email">Email</label>
-            <input type="email" id="email" autocomplete="email" />
-            <br />
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" autocomplete="tel" />
-            <br />
-            <label for="date">Date</label>
-            <input type="date" id="date" />
-            <br />
-            <label for="city">City</label>
-            <select name="city" id="city">
-              <option value="tel-aviv" selected>Tel Aviv</option>
-              <option value="jerusalem">Jerusalem</option>
-              <option value="haifa">Haifa</option>
-              <option value="be'er-sheva">Be'er Sheva</option>
-            </select>
-            <br />
-            <div>
-              <label>
-                <input type="radio" name="radio-group" value="phone" />Phone
-              </label>
-              <label>
-                <input type="radio" name="radio-group" value="email" />Email
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="radio-group"
-                  value="whatsapp"
-                />Whatsapp
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="radio-group"
-                  value="telegram"
-                />Telegram
-              </label>
-              <br />
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" autocomplete="name" />
             </div>
-            <br />
-            <div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </div>
+
+            <div class="form-group">
+              <label for="city">City</label>
+              <select name="city" id="city">
+                <option value="tel-aviv" selected>Tel Aviv</option>
+                <option value="jerusalem">Jerusalem</option>
+                <option value="haifa">Haifa</option>
+                <option value="be'er-sheva">Be'er Sheva</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <fieldset>
+                <legend>Contact Method</legend>
+                <div class="radios">
+                  <label>
+                    <input type="radio" name="radio-group" value="phone" />Phone
+                  </label>
+                  <label>
+                    <input type="radio" name="radio-group" value="email" />Email
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="radio-group"
+                      value="whatsapp"
+                    />Whatsapp
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="radio-group"
+                      value="telegram"
+                    />Telegram
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="form-group">
               <fieldset>
                 <legend>Hobbies</legend>
-                <input type="checkbox" name="option1" id="option1" />
-                <label for="option1">Sports</label>
-                <br />
-                <input type="checkbox" name="option2" id="option2" />
-                <label for="option2">Video Games</label>
-                <br />
-                <input type="checkbox" name="option3" id="option3" />
-                <label for="option3">Human Interaction</label>
-                <br />
-                <input type="checkbox" name="option4" id="option4" />
-                <label for="option4">Life</label>
-                <br />
+                <div class="checks">
+                  <div class="form-group">
+                    <input type="checkbox" name="option1" id="option1" />
+                    <label for="option1">Sports</label>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="checkbox" name="option2" id="option2" />
+                    <label for="option2">Games</label>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="checkbox" name="option3" id="option3" />
+                    <label for="option3">Friends</label>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="checkbox" name="option4" id="option4" />
+                    <label for="option4">Life</label>
+                  </div>
+                </div>
               </fieldset>
             </div>
             <br />
@@ -237,7 +261,7 @@
             <br />
             <textarea name="message" id="message" rows="5"></textarea>
             <br />
-            <input type="submit" />
+            <input class="submit-button" type="submit" />
           </fieldset>
         </form>
       </section>
