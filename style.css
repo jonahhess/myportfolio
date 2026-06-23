@@ -81,6 +81,7 @@ body {
 
 .card-image {
   height: 116px;
+  min-height: 116px;
 }
 
 .card-image img {
@@ -199,16 +200,6 @@ section {
 }
 
 .logo:hover {
-  scale: 1.2;
-}
-
-.logo-big {
-  width: 38px;
-  height: 38px;
-  transition: 0.3s;
-}
-
-.logo-big:hover {
   scale: 1.2;
 }
 
