@@ -280,6 +280,8 @@ section {
 form {
   display: grid;
   width: auto;
+  max-width: 518px;
+  margin: auto;
 }
 
 form * {
